@@ -1,0 +1,156 @@
+/* Footer login */
+.footer1{
+    margin-top: 120px;
+    background-color: #191E22;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.footer1 .div{
+    font-family: "LatoBold";
+}
+.footer1 div span{
+    color: #2ECC71;
+}
+
+.footer1 ul{
+    list-style-type: none;
+    padding-left: none;
+}
+.footer1 ul li{
+    display: inline-block;
+}
+.footer1 ul li a i{
+    color: white;
+    margin: 30px 20px;
+}
+
+.footer1 ul li a i:hover{
+    color: lightblue;
+    cursor: pointer;
+}
+
+/* BOX */
+.box{
+    margin-left : 10px;
+    margin-bottom: 100px;
+}
+.button1{
+    margin-left: 20px;
+    padding: 75px 80px;
+    margin-top: 30px;
+}
+
+.button2{
+    padding: 75px 80px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+/* CONTACT */
+
+.contact{
+    overflow: hidden;
+    padding: 30px 50px;
+    background-color: #252f31;
+}
+.contact .container .info,
+.contact .container .form{
+    width: 100%;
+    float: left;
+    font-size: 25px;
+}
+.contact .container .info h2{
+    color: #2ECC71;
+    text-transform: uppercase;
+    font-family: "LatoBold";
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+.contact .container .info p,
+.contact .container .info address {
+    color: #fff;
+    font-family: "LatoLight";
+    line-height: 1cm;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.contact .container .form{
+    padding-top: 30px;
+    text-align: left;
+    width: 60%;
+}
+
+.contact .container .form label{
+    font-family: "LatoBold";
+    color: #2ECC71;
+    display: block;
+    margin: 10px 0;
+    
+}
+
+.contact .container .form input[type="text"]{
+    background-color: #4B5557;
+    color: #fff;
+    font-family: "LatoRegular";
+    padding: 10px;
+    width: 170%;
+    margin-bottom: 10px;
+}
+
+.contact .container .form input[type="submit"]{
+    display: block;
+    background-color: #191E22;
+    font-family: "LatoBold";
+    color: hsl(145, 63%, 49%);
+    padding: 10px 10px;
+    width: 170%;
+    text-transform: uppercase;
+}
+
+.contact .container .form textarea{
+    background-color: #4B5557;
+    color: white;
+    font-family: "LatoRegular";
+    padding: 10px;
+    width: 170%;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+/* Footer */
+.footer{
+    background-color: #191E22;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.footer .div{
+    font-family: "LatoBold";
+}
+.footer div span{
+    color: #2ECC71;
+}
+
+.footer ul{
+    list-style-type: none;
+    padding-left: none;
+}
+.footer ul li{
+    display: inline-block;
+}
+.footer ul li a i{
+    color: white;
+    margin: 30px 20px;
+}
+
+.footer ul li a i:hover{
+    color: lightblue;
+    cursor: pointer;
+}
+
+
+
+

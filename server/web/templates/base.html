@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>{% block title %}Untitled{% endblock %}</title>
+   <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/bootstrap.css') }}"
+   />
+   <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/style.css') }}"
+   />
+   <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='font/css/all.css') }}"
+   />
+</head>
+<body>
+   <!-- ==============================HEADER============================= -->
+   {% block logout %}
+   <ul class="navbar-nav ml-auto bg-dark">
+      <li class="nav-item ">
+         <a class="nav-link text-white float-right mr-3" id="logout" href="login"><i class="fas fa-user-times"></i>Logout</a>
+      </li>  
+   </ul>
+   {% endblock %}
+   <header class="bg-success text-center p-4">
+      <div class="container">
+         <div class="row">
+               <div class="col-md-12 ">
+                  <h2 class="text-white text-center">
+                     <a class="nav-link text-white mr-3" id="home" href="/"><i class="fas fa-charging-station" aria-hidden="true"><b> CHARGING STATION</b></i></a>
+                  </h2>
+               </div>  
+         </div>
+      </div>  
+   </header>
+
+   <!-- ============================FLASHED MSG========================== -->
+   {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+         {% for category, message in messages %}
+            {% if category == 'error' %}
+               <div class="alert alert-danger alert-dismissable fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+            {% elif category == 'success' %}
+               <div class="alert alert-success alert-dismissable fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+            {% endif %}
+         {% endfor %}
+      {% endif %}
+   {% endwith %}
+    
+   <!-- ==============================CONTENT============================ -->
+   {% block content %}
+   {% endblock %}
+   
+   <!-- ==============================CONTACT============================ -->
+   {% block contact %}
+   <div class="contact" id="contactme">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 col-sm-12">
+               <div class="info">
+                  <h2>Contact Us</h2>
+                  <p>
+                     Welcome to our charging station<br/>
+                     Credits:<br/>
+                     <table>
+                        <tr>
+                           <td>Revelino Puteraiwan</td>
+                           <td></td>
+                           <td>-</td>
+                           <td></td>
+                           <td>2440064122</td>
+                        </tr>
+                        <tr>
+                           <td>Julianto Leeman</td>
+                           <td></td>
+                           <td>-</td>
+                           <td></td>
+                           <td>2440060124</td>
+                        </tr>
+                        <tr>
+                           <td>Vicky Goh</td>
+                           <td></td>
+                           <td>-</td>
+                           <td></td>
+                           <td>2440066645</td>
+                        </tr>
+                        <tr>
+                           <td>Klemens Raphael Dragon</td>
+                           <td></td>
+                           <td>-</td>
+                           <td></td>
+                           <td>2440042840</td>
+                        </tr>
+                        <tr>
+                           <td>Fernando Sutanto</td>
+                           <td></td>
+                           <td>-</td>
+                           <td></td>
+                           <td>2440066903</td>
+                        </tr>
+                     </table>
+                  </p>
+               </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+               <div class="form">
+                  <form method="post">
+                     <div class="form-group">
+                        <label for="name">Name</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        placeholder=""
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder=""
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        placeholder=""
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea
+                        id="message"
+                        name="message"
+                        cols="30"
+                        rows="10"
+                        ></textarea>
+                     </div>
+                     <br/>
+                     <input type="submit" value="send"/>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   {% endblock %}
+
+   <!-- ==============================FOOTER============================= -->
+   <div class="footer">
+      <div class="container">
+         <div>
+            Copyright &copy; 2021 Group 3
+            <span>
+               <i class="fas fa-charging-station"> CHARGING STATION</i>
+            </span>
+         </div>
+         <ul>
+               <li><a href="#" target="_self" rel="noopener noreferrer"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+               <li><a href="#" target="_self" rel="noopener noreferrer"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+               <li><a href="#" target="_self" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a></li>
+               <li><a href="#" target="_self" rel="noopener noreferrer"><i class="fab fa-google-plus-square fa-2x"></i></a></li>
+               <li><a href="#" target="_self" rel="noopener noreferrer"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+         </ul>
+      </div>
+   </div>
+
+   <!-- JQuery First, then Popper and bootstrap -->
+   <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"
+   ></script>
+   <script
+      src="{{ url_for('static', filename='js/popper.min.js') }}"
+   ></script>
+   <script
+      src="{{ url_for('static', filename='js/bootstrap.js') }}"
+   ></script>
+   <script
+      src="{{ url_for('static', filename='js/script.js') }}"
+   ></script>
+</body>
+</html>
