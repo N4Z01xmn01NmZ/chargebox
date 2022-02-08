@@ -1,64 +1,30 @@
-/* Footer login */
-.footer1{
-    margin-top: 120px;
-    background-color: #191E22;
-    color: white;
-    padding: 20px 20px;
-    text-align: center;
-}
-
-.footer1 .div{
-    font-family: "LatoBold";
-}
-.footer1 div span{
-    color: #2ECC71;
-}
-
-.footer1 ul{
-    list-style-type: none;
-    padding-left: none;
-}
-.footer1 ul li{
-    display: inline-block;
-}
-.footer1 ul li a i{
-    color: white;
-    margin: 30px 20px;
-}
-
-.footer1 ul li a i:hover{
-    color: lightblue;
-    cursor: pointer;
-}
-
 /* BOX */
 .box{
     margin-left : 10px;
     margin-bottom: 100px;
 }
 .button1{
-    margin-left: 20px;
-    padding: 75px 80px;
+    margin-left: 25px;
+    padding: 55px 60px;
     margin-top: 30px;
 }
-
 .button2{
-    padding: 75px 80px;
+    margin-left: 30px;
+    padding: 55px 60px;
     margin-top: 30px;
-    margin-left: 25px;
 }
 /* CONTACT */
-
 .contact{
     overflow: hidden;
-    padding: 30px 50px;
-    background-color: #252f31;
+    padding: 70px 30px;
+    background-color: #374346;
+    margin-top: 70px;
 }
 .contact .container .info,
 .contact .container .form{
     width: 100%;
     float: left;
-    font-size: 25px;
+    font-size: 20px;
 }
 .contact .container .info h2{
     color: #2ECC71;
@@ -96,9 +62,16 @@
     font-family: "LatoRegular";
     padding: 10px;
     width: 170%;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
-
+.contact .container .form input[type="email"]{
+    background-color: #4B5557;
+    color: #fff;
+    font-family: "LatoRegular";
+    padding: 10px;
+    width: 170%;
+    margin-bottom: 30px;
+}
 .contact .container .form input[type="submit"]{
     display: block;
     background-color: #191E22;
@@ -107,6 +80,7 @@
     padding: 10px 10px;
     width: 170%;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .contact .container .form textarea{
@@ -123,10 +97,14 @@
 .footer{
     background-color: #191E22;
     color: white;
-    padding: 20px 20px;
-    text-align: center;
+    padding: 25px 35px;
 }
-
+.text{
+    margin-left: 70px;
+}
+.text1{
+    margin-left: 5px;
+}
 .footer .div{
     font-family: "LatoBold";
 }
@@ -143,7 +121,7 @@
 }
 .footer ul li a i{
     color: white;
-    margin: 30px 20px;
+    margin: 10px 10px;
 }
 
 .footer ul li a i:hover{
@@ -151,6 +129,7 @@
     cursor: pointer;
 }
 
-
-
-
+/* Header */
+.head{
+    margin-bottom:70px;
+}

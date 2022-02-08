@@ -20,13 +20,13 @@
 </head>
 <body>
    <!-- ==============================HEADER============================= -->
-   {% block logout %}
+   {% if user.is_authenticated %}
    <ul class="navbar-nav ml-auto bg-dark">
       <li class="nav-item ">
-         <a class="nav-link text-white float-right mr-3" id="logout" href="login"><i class="fas fa-user-times"></i>Logout</a>
+         <a class="nav-link text-white float-right mr-3" id="logout" href="logout"><i class="fas fa-user-times"></i>Logout</a>
       </li>  
    </ul>
-   {% endblock %}
+   {% endif %}
    <header class="bg-success text-center p-4">
       <div class="container">
          <div class="row">
@@ -77,7 +77,7 @@
                   <p>
                      Welcome to our charging station<br/>
                      Credits:<br/>
-                     <table>
+                     <table class="text-white">
                         <tr>
                            <td>Revelino Puteraiwan</td>
                            <td></td>
@@ -153,6 +153,7 @@
                      <div class="form-group">
                         <label for="message">Message</label>
                         <textarea
+                        class="form-control"
                         id="message"
                         name="message"
                         cols="30"
@@ -172,10 +173,10 @@
    <!-- ==============================FOOTER============================= -->
    <div class="footer">
       <div class="container">
-         <div>
+         <div class="text">
             Copyright &copy; 2021 Group 3
             <span>
-               <i class="fas fa-charging-station"> CHARGING STATION</i>
+               <i class="fas fa-charging-station text1"> CHARGING STATION</i>
             </span>
          </div>
          <ul>
